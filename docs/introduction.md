@@ -1,6 +1,8 @@
 ---
 title : 'Introduction'
 date : '2025-06-30'
+parent : null
+order : 1
 author : 'Md. Pieash Ahmed'
 category : 'General'
 tags : ['intro', 'getting started']
