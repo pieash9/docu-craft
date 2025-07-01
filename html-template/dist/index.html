@@ -26,7 +26,7 @@
         <!-- Logo Ends -->
         <!-- Header -->
         <div
-          class="fixed inset-x-0 top-0 z-50 bg-white bg-white/[var(--bg-opacity-light)] px-4 backdrop-blur-sm transition dark:bg-[#17181C] dark:backdrop-blur sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80"
+          class="fixed inset-x-0 top-0 z-50 bg-white bg-white/(--bg-opacity-light) px-4 backdrop-blur-sm transition dark:bg-[#17181C] dark:backdrop-blur sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80"
           style="--bg-opacity-light: 0.5; --bg-opacity-dark: 0.2"
         >
           <div class="container flex h-14 items-center justify-between gap-12">
@@ -54,13 +54,13 @@
               </button>
               <!-- result card -->
               <div
-                class="absolute left-0 top-12 z-[999] w-full rounded-md bg-white p-4 shadow"
+                class="absolute left-0 top-12 z-999 w-full rounded-md bg-white p-4 shadow"
               >
-                <p class="!text-lg">
+                <p class="text-lg!">
                   Showing results for
                   <span class="font-semibold">"keyword":</span>
                 </p>
-                <ul role="list" class="divide-y divide-gray-100 [&>*]:py-2">
+                <ul role="list" class="divide-y divide-gray-100 *:py-2">
                   <li class="">
                     <a class="transition-all hover:text-emerald-600" href="#"
                       >How to create a new component in Vue.js</a
@@ -217,10 +217,10 @@
             <!-- Green Top Overlay -->
             <div class="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
               <div
-                class="absolute left-1/2 top-0 ml-[-38rem] h-[25rem] w-[81.25rem] dark:[mask-image:linear-gradient(white,transparent)]"
+                class="absolute left-1/2 top-0 -ml-152 h-100 w-325 dark:mask-[linear-gradient(white,transparent)]"
               >
                 <div
-                  class="absolute inset-0 bg-gradient-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100"
+                  class="absolute inset-0 bg-linear-to-r from-[#36b49f] to-[#DBFF75] opacity-40 mask-[radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100"
                 ></div>
               </div>
             </div>
@@ -261,7 +261,7 @@
                   href="#guides"
                 >
                   <div
-                    class="absolute ml-[calc(-1*var(--width))] mt-1 hidden w-[var(--width)] opacity-0 transition [--width:calc(2.625rem+0.5px+50%-min(50%,calc(theme(maxWidth.lg)+theme(spacing.8))))] group-hover:opacity-100 group-focus:opacity-100 md:block lg:z-50 2xl:[--width:theme(spacing.10)]"
+                    class="absolute ml-[calc(-1*var(--width))] mt-1 hidden w-(--width) opacity-0 transition [--width:calc(2.625rem+0.5px+50%-min(50%,calc(var(--container-lg)+(--spacing(8)))))] group-hover:opacity-100 group-focus:opacity-100 md:block lg:z-50 2xl:[--width:--spacing(10)]"
                   >
                     <div
                       class="group/anchor block h-5 w-5 rounded-lg bg-zinc-50 ring-1 ring-inset ring-zinc-300 transition hover:ring-zinc-500 dark:bg-zinc-800 dark:ring-zinc-700 dark:hover:bg-zinc-700 dark:hover:ring-zinc-600"
@@ -437,7 +437,7 @@
                 Was this page helpful?
               </p>
               <div
-                class="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10"
+                class="group grid h-8 grid-cols-[1fr_1px_1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10"
               >
                 <button
                   type="submit"
