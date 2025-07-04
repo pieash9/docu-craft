@@ -1,4 +1,4 @@
-import ContentDisplay from "@/app/components/ContentDisplay";
+import ContentDisplay from "@/components/ContentDisplay";
 import { getDocuments } from "@/lib/doc";
 import { getDocumentsByTag } from "@/utils/doc-util";
 

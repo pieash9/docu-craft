@@ -1,4 +1,4 @@
-import ContentDisplay from "@/app/components/ContentDisplay";
+import ContentDisplay from "@/components/ContentDisplay";
 
 const ContentDetails = ({params : {contentId}}) => {
     return (

@@ -1,4 +1,4 @@
-import ContentDisplay from "@/app/components/ContentDisplay";
+import ContentDisplay from "@/components/ContentDisplay";
 
 const SubContentDetails = ({ params: { subContentId } }) => {
   return (
